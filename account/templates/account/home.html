@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% load static %}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <title>Welcome to MyApp</title>
+
+  </head>
+  <body>
+    <div class="container">
+      <!-- Logo -->
+      <img src="{% static 'img/logo.jpg' %}" alt="MyApp Logo" class="logo" />
+
+      <!-- Welcome Message -->
+      <h1>Welcome to MyApp</h1>
+      <p>Your gateway to the best online services.</p>
+
+      <!-- Buttons -->
+      <a href="{% url 'login_page' %}" class="btn btn-primary">Login</a>
+      <a href="{% url 'register' %}" class="btn btn-secondary">Register</a>
+
+      <!-- Social Media Icons -->
+      <div class="social-icons">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-linkedin-in"></a>
+        <a href="#" class="fab fa-instagram"></a>
+      </div>
+
+      <!-- Footer -->
+      <footer>
+        <p>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% load static %}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <title>Create a Login Page with Django</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+  </head>
+  <body>
+    <div class="container">
+      <!-- Logo -->
+      <img src="{% static 'img/logo.png' %}" alt="MyApp Logo" class="logo" />
+
+      <!-- Welcome Message -->
+      <h1>Create a Login Page with Django</h1>
+      <p>
+        Learn how to create a secure and functional login page in Django with
+        these easy steps.
+      </p>
+
+      <!-- Rotating Boxes -->
+      <div class="box-container">
+        <div class="box">
+          <div class="box-content front">
+            <span>Step 1</span>
+            <p>Set up your Django project.</p>
+          </div>
+          <div class="box-content back">
+            <p>
+              Initialize a Django project and create a new app for handling
+              authentication.
+            </p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-content front">
+            <span>Step 2</span>
+            <p>Create User Model.</p>
+          </div>
+          <div class="box-content back">
+            <p>
+              Use Django’s built-in `User` model or create a custom user model
+              if needed.
+            </p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-content front">
+            <span>Step 3</span>
+            <p>Create Login Form.</p>
+          </div>
+          <div class="box-content back">
+            <p>
+              Build a login form using Django’s form handling and validation
+              tools.
+            </p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-content front">
+            <span>Step 4</span>
+            <p>Set Up Views.</p>
+          </div>
+          <div class="box-content back">
+            <p>
+              Create views to handle login logic, user authentication, and
+              redirecting.
+            </p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-content front">
+            <span>Step 5</span>
+            <p>Configure URLs.</p>
+          </div>
+          <div class="box-content back">
+            <p>
+              Map your login views to URLs, and include them in your project’s
+              URL configurations.
+            </p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-content front">
+            <span>Step 6</span>
+            <p>Add Login Page Style.</p>
+          </div>
+          <div class="box-content back">
+            <p>
+              Style your login page with CSS to make it user-friendly and
+              attractive.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Social Media Icons -->
+      <div class="social-icons">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-linkedin-in"></a>
+        <a href="#" class="fab fa-instagram"></a>
+      </div>
+
+   
+    </div>
+  </body>
+</html>
